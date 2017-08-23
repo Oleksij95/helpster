@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Заголовок </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <aside>
+      <div class="container-fluid">
+        <h1>Raven <span>X</span></h1>
+        <h6><a href="settings/dashboard.html">Dashboard</a></h6>
+        <ul>
+          <li><a href="cars.html" >My cars</a> <!-- <div class="calcCar"><span id = "calcCarspan">2</span></div> --> </li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="quotes.html" >Quotes</a></li>
+          <li><a href="recommendedservices.html">Recommended <br> Services</a><!-- <div class="calcRecomendedServises"><span id = "calcRecomendedServisesSpan"></span></div> --></li>
+          <li><a href="advice.html">Advice</a></li>
+          <li><a href="#" class="active">My  mechanics</a></li>
+          <li><a href="#">Gifts & Coupons</a></li>
+          <li><hr></li>
+          <li><a href="#">Billing & Payments</a></li>
+        </ul>
+        <a href="#" class="btn">GET A NEW QUOTE</a>
+      </div>
+    </aside>
+
+    <nav class="visible-xs visible-sm">
+      <div class="container">
+        <div class="col-xs-5 ">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars"></i></a>
+            <ul class="dropdown-menu text-right">
+             <li><a href="cars.html">My cars</a> <div class="calcCar"><span id = "calcCarspan"></span></div></li>
+              <li><a href="appointments.html" class="active">Appointments</a></li>
+              <li><a href="quotes.html">Quotes</a></li>
+              <li><a href="recommendedservices.html">Recommended <br> Services</a><div class="calcRecomendedServises"><span id = "calcRecomendedServisesSpan"></span></div></li>
+              <li><a href="advice.html">Advice</a></li>
+              <li><a href="#">My mechanics</a></li>
+              <li><a href="#">Gifts & Coupons</a></li>
+              <li><hr></li>
+              <li><a href="#"> Billing & Payments</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="visible-xs MenuUser">
+      <div class="container">
+        <div class="col-xs-5 ">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+           <i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu text-right">
+               <li><a href="#">Give 10$ , Get 10$  <i class="fa fa-heart"></i></a></li>
+               <li><a href="#">Help  <i class="fa fa-question-circle"></i></a></li>
+               <li><a href="#">Notification <i class="fa fa-bell" aria-hidden="true"></i></a></li>
+               <li><a href="#" onclick="openuser();">Alina Smith  <i class="fa fa-user" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+  
+    <div class="openUser">
+      <ul>
+        <li><a href="AccountSettings.html">Account Settings</a></li>
+        <li><a href="">Gifting & Coupons</a></li>
+        <br>
+        <li><hr></li>
+        <li>Sing Out</li>
+      </ul>
+    </div>
+
+
+    <header>
+     <div class="top_line">
+       <ul class="list-inline">
+         <li><a href="#">Give 10$ , Get 10$  <i class="fa fa-heart"></i></a></li>
+         <li><a href="#">Help  <i class="fa fa-question-circle"></i></a></li>
+         <li><a href="#">Notification <i class="fa fa-bell" aria-hidden="true"></i></a></li>
+         <li><a href="#" onclick="openuser();">Alina Smith  <i class="fa fa-user" aria-hidden="true"></i></a></li>
+       </ul>
+     </div>
+    </header>
+
+    <div class="bottom_line_settings">
+       <h1 class="H1Cars"><strong>My Mechanics</strong></h1>
+     </div>
+
+     <div class="addCarBody">
+       <img src="img/mechanics.png" alt="quotes">
+       <h1>This page displays all mechanics <br> who have serviced your car.</h1>
+       <p>Book an appointment to access our network of certified expert mechanics.</p>
+       <button class="addCar">GET A NEW QUOTE </button>
+     </div>
+
+    <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+              </div>
+              <div class="modal-body">
+               <div class="row">
+                 
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      $(document).ready(
+          function() {
+              $("html").niceScroll({cursorcolor:"#000"});
+          }
+      );
+    </script>
+    <script src= "js/main.js"></script>
+  </body>
+</html>

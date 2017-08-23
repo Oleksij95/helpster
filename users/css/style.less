@@ -1,0 +1,768 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face{
+	font-family: "KickHornet";
+	src:url("..//fonts/KickHornet.eot");
+	src:url("..//fonts/KickHornet.eot&#iefix") format("embedded-opentype"),
+		url("..//fonts/KickHornet.woff") format("woff"),
+		url("..//fonts/KickHornet.ttf") format("treutype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+body{
+	background-color: #f1f5f8;
+}
+h1#carH1{
+	display: block;
+ 	width: 100%;
+ 	background-color: #f1f5f8;
+    z-index: 9999;
+    font-size: 18px;
+    margin: 0px;
+   
+}
+h1#ServicesH1{
+	font-size: 18px;
+	display: block;
+	background-color: #f1f5f8;
+	position: absolute;
+	z-index: 9999;
+	top: -45px;
+}
+
+aside{
+	height: 100vh;
+	width: 20%;
+	position: fixed;
+	background-color: #112a4b;
+	float: left;
+	h1{
+		font-family: KickHornet;
+		color: #57bcfc;
+		text-align: center;
+		margin-bottom: 50px;
+		margin-top: 50px;
+		span{
+			color: red;
+		}
+	}
+	h6{
+		color: #ffffff;
+		font-size: 14px;
+		margin-left: 40px;
+		margin-bottom:20px;
+		a{
+			text-decoration: none;
+			color: #828b96;
+			&:hover{
+				text-decoration: none;
+				color: #fff;
+			};
+		}
+	}
+	ul{
+		list-style: none;
+		li{
+			margin-top: 10px;
+			a{
+				color: #828b96;
+				font-size: 14px;
+				text-decoration:none;
+				margin: 0;
+				&:hover{
+					text-decoration: none;
+					color: #fff;
+				};
+			}
+			a.active{
+				color: #fff;
+				&:hover{
+					text-decoration: none;
+				};
+			}
+			hr{
+				border-top: 1px solid #1a365a;
+				color: #1a365a;
+			}
+			.calcCar, .calcRecomendedServises{
+				float: right;
+				width: 15px;
+				height: 15px;
+				margin-right: 10px;
+				background-color: #1c7ad5;
+				span{
+					display: block;
+					font-size: 10px;
+					text-align: center;
+					color: #fff;
+					padding-top: 1.9px;
+				}
+			}
+		}
+	}
+	a.btn{
+		margin-left: 40px;
+		padding: 0;
+		text-align: center;
+		padding: 10px 40px;
+		border: 1px solid #517196;
+		color: #7da2c8;
+		text-align: center;
+		margin-top: 40px;
+		&:hover{
+			color: #0da2c8;
+			border: 1px solid #0da2c8;
+			text-decoration: none;
+		};
+
+	}
+}
+
+.openUser{
+	display: none;
+	width: 240px;
+	height: 150px;
+	position: absolute;
+	right: 30px;
+	top: 50px;
+	box-shadow: 1px 1px 15px #909497;
+	z-index: 9999;
+	background-color: #fff;
+	ul{
+		list-style: none;
+		li{
+			margin-top: 5px;
+			&:last-child{
+				margin-bottom: 10px;
+			};
+			a{
+				font-size: 16px;
+				text-decoration: none;
+				color: #909497;
+				&:hover{
+					color: #46484a;
+				};
+			}
+		}
+	}
+}
+
+
+header{
+	background-color: #fff;
+	width: 80%;
+	height: 50px;
+	z-index: 999;
+	float: left;
+	position: relative;
+	left: 20%;
+	.top_line{
+		position: absolute;
+		width: 100%;
+		text-align: right;
+		margin-top: 20px;
+		margin-bottom: 300px;
+		border-bottom: 1px solid #ececec;
+		ul{
+			li{
+				border-left: 1px solid #ececec;
+				width: 170px;
+				text-align: center;
+				&:first-child{
+					border-left: none;
+				};
+			}
+		}
+		a{
+			text-decoration: none;
+			color: #a8a7a7;
+			&:hover{
+				text-decoration: none;
+				color: #464646;
+			};
+			i{
+				margin-left: 10px;
+			}
+		}
+	}
+	
+}
+
+.bottom_line_settings{
+		position: relative;
+		/*border: 1px solid red;*/
+		padding-top: 15px;
+		padding-left: 40px;
+		left: 20%;
+		width: 80%;
+		float: left;
+		background-color: #fff;
+		h1.H1Cars{
+			margin-top: 30px;
+		}
+		button.H1Cars{
+			margin-top: 17px;
+		}
+		ul{
+			li{
+				a{
+					color: #525456;
+					text-decoration: none;
+					text-transform: uppercase;
+					padding: 10px 20px 30px 20px;
+					border: none;
+					border-bottom: 1px solid transparent;
+					background-color: transparent;
+					&:hover{
+						border-bottom: 2px solid #577cae;
+					};
+				}
+				a.active{
+					border-bottom: 2px solid #577cae;
+				}
+			}
+	}
+		
+}
+
+
+.bottom_line_settings{
+	height: 133px;
+	h1{
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+
+	button{
+		right: 20px;
+		top: 25px;
+		position: absolute;
+		border-radius: 30px;
+		border: 1px solid #b9baba;
+		background-color: transparent;
+		padding: 15px 25px;
+		text-transform: uppercase;
+		color: #585858;
+		&:hover{
+			border: 1px solid #576371;
+		};
+	}
+}
+
+.addCarBody{
+		position: relative;
+		padding-top: 15px;
+		padding-left: 40px;
+		left: 20%;
+		width: 80%;
+		float: left;
+		text-align: center;
+		top: 75px;
+		h1{
+			font-size: 26px;
+		}
+		p{
+			margin-top: 20px;
+			color: #88898b;
+		}
+		p.recommendedservice{
+			display: block;
+			position: absolute;
+			background-color: #e0f0fe;
+			width: 93%;
+			border: 1px solid #a0c8f3;
+			text-align: left;
+			padding: 10px 20px 10px 50px;
+			color: #2790ec;
+			top: -50px;
+		}
+		button{
+			text-transform: uppercase;
+			color: #fff;
+			background-color: #186fce;
+			padding: 15px 23px;
+			border-radius: 30px;
+			border: none;
+			margin-top: 20px;
+			&:hover{
+				background-color: #4a9df7;
+			};
+		}
+		button.CarAdvice{
+			background-color: #fff;
+			color: #68686a;
+			border: 1px solid #c1c1c1;
+			margin-left: 20px;
+			&:hover{
+				background-color: #e9e5e5;
+			};
+		}
+}
+
+
+
+
+/*============    	МОДАЛЬНЫЕ ОКНА    ===========*/
+
+
+
+/*============    	АДАПТИВ    ===========*/
+
+.dropdown-toggle{
+	padding: 5px;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	i{
+		font-size: 40px;
+	}
+}
+
+.MenuUser{
+	right: 0;
+	position: absolute;
+	top: 0;
+	.dropdown-menu{
+		margin-left: -150px;
+	}
+}
+
+@media(min-width:0px) and (max-width:320px) {
+	header{
+		display: none;
+	}
+
+	aside{
+		display: none;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook ,.ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+		.give{
+			display: none;
+		}
+		.recommended_servises{
+			margin-left: 0;
+			border: none;
+			display: none;
+		}
+	}
+
+	.bottom_line_settings{
+		text-align: center;
+		padding-left: 0;
+		h1{
+			font-size: 14px;
+		}
+		ul{
+			li{
+				a{
+					font-size: 12px;
+					border: none;
+					padding: 0;
+					&:hover{
+						border: none;
+					};
+				}
+			}
+			li.active{
+				border: none;
+			}
+		}
+		h1.H1Cars{
+			font-size: 16px;
+			margin-top: 0px;
+		}
+
+		button.H1Cars{
+			margin: 40px auto;
+			left: 0px;
+			right: 0;
+			display: block;
+			width: 70%;
+		}
+	}
+	.addCarBody{
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 40px;
+		p.recommendedservice{
+			width: 100%;
+			font-size: 12px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		button.CarAdvice{
+			padding: 13px 20px;
+			
+			font-size: 13px;
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+
+	}
+}
+
+@media(min-width:321px) and (max-width:480px) {
+	
+
+	aside,header{
+		display: none;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices{
+		left: 0;
+		width: 100%;
+	}
+
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook ,.ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+		.give{
+			display: none;
+		}
+		.recommended_servises{
+			margin-left: 0;
+			border: none;
+			display: none;
+		}
+	}
+
+	.bottom_line_settings{
+		text-align: center;
+		padding-left: 0;
+		h1{
+			font-size: 14px;
+		}
+		ul{
+			li{
+				a{
+					font-size: 12px;
+					border: none;
+					padding: 0;
+					&:hover{
+						border: none;
+					};
+				}
+			}
+			li.active{
+				border: none;
+			}
+		}
+		h1.H1Cars{
+			font-size: 16px;
+			top: 0;
+			margin-top: 0;
+			display: block;
+		}
+		button.addCars{
+			margin: 40px auto;
+			left: 0px;
+			right: 0;
+			display: block;
+			width: 55%;
+		}
+	}
+	
+	.addCarBody{
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 40px;
+		p.recommendedservice{
+			width: 100%;
+			font-size: 12px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		button.CarAdvice{
+			
+			font-size: 13px;
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	
+	aside, header{
+		display: none;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices{
+		left: 0;
+		width: 100%;
+	}
+
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook, .ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					width: 110px;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.bottom_line{
+		overflow: hidden;
+		width: 100%;
+		margin-top: 50px;
+		.user{
+			margin-left: 0;
+			h1{
+				font-size: 14px;
+			}
+		}
+	}
+	
+	.addCarBody{
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 40px;
+		p.recommendedservice{
+			width: 100%;
+			font-size: 12px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		button.CarAdvice{
+			
+			font-size: 13px;
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+@media(min-width:768px) and (max-width:768px){
+	header{
+		display: block;
+		.top_line{
+			ul{
+				li{
+					width: 150px;
+					a{
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	aside{
+		display: none;
+	}
+	.addCarBody{
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		p.recommendedservice{
+			width: 100%;
+			font-size: 12px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		button.CarAdvice{
+			
+			font-size: 13px;
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+	}
+
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices{
+		left: 0;
+		width: 100%;
+	}
+	header, .bottom_line, .LogPastServices, .Cars, .UpcomingRecommendedServices, .bottom_line_settings, .settingsAccount, .faceBook, .ChangePassword{
+		left: 0;
+		width: 100%;
+	}
+	header{
+		background-color: transparent;
+		margin-bottom: 30px;
+		.top_line{
+			border: none;
+			text-align: center;
+			ul{
+				li{
+					border: none;
+					width: 160px;
+					a{
+						font-size: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.mail_preferences{
+		left: 0;
+		width: 100%;
+		margin-left: 0;
+		.centerDIv{
+			margin: 0 auto;
+		}
+		.centerDIvFooter{
+			bottom: -20px;
+			.centerDIv{
+				padding-top: 20px;
+			}
+		}
+	}
+
+	.addCarBody{
+		margin-bottom: 40px;
+	}
+}
+
+
+@media(min-width:993px) and (max-width:1200px) {
+	br{
+		display: none;
+	}
+	.addCarBody{
+		margin-bottom: 40px;
+	}
+	aside{
+		br{
+			display: block;
+		}
+		a.btn{
+			padding: 10px 25px;
+			margin-left: 0;
+		}
+	}
+	.Cars{
+		.profil{
+			br{
+				display: block;
+			}
+			height: 230px;
+		}
+	}
+		
+	.bottom_line{
+			overflow: hidden;
+			width: 80%;
+			/*margin-top: 50px;*/
+			.user{
+				margin-left: 0;
+				h1{
+					font-size: 14px;
+				}
+			}
+			.give{
+				display: none;
+			}
+			.recommended_servises{
+				margin-left: 0;
+				border: none;
+				right: 0;
+			}
+	}
+	
+}
+
+@media(min-width:1200px) and (max-width:1529px){
+	aside{
+		a.btn{
+			padding: 10px 20px;
+		}
+	}
+	.addCarBody{
+		margin-bottom: 40px;
+	}
+	
+	.CarsADD{
+		.profil{
+			height: 230px;
+			br{
+				display: block;
+			}
+		}
+	}
+}
+
+
+
